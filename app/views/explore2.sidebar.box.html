@@ -19,6 +19,7 @@
           <h4>
             <a ui-sref="explore.map"><i class="fa fa-times pull-right close" uib-tooltip="{{'CLOSESIDEBAR' | translate}}" tooltip-placement="left"></i></a>
             <a href="{{details.archiveLink}}" target="_blank"><i class="fa fa-archive pull-right close" uib-tooltip="{{'ARCHIVE' | translate}}" tooltip-placement="left"></i></a>
+            <a ui-sref="account.edit.general({id: details.box._id, box: details.box})"><i class="fa fa-cog pull-right close" uib-tooltip="{{'EDITBOX' | translate}}" tooltip-placement="left"></i></a>
             <a ng-click="details.focusSelectedBox()"><i class="fa fa-thumb-tack pull-right close" uib-tooltip="{{'CENTER' | translate}}" tooltip-placement="left"></i></a>
           </h4>
         </div>
